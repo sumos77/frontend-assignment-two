@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search Pixabay for all kinds of images with different colors.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="style.css">
+    <title>Pixabay Image Search</title>
+    <script src="search.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pixabay Image Search</h1>
+        <form class="input-area">
+            <input type="text" id="search" placeholder="search images">
+            <select id="color">
+                <option value="">any color</option>
+                <option value="red">red</option>
+                <option value="orange">orange</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+                <option value="turquoise">turquoise</option>
+                <option value="lilac">lilac</option>
+                <option value="pink">pink</option>
+                <option value="white">white</option>
+                <option value="gray">gray</option>
+                <option value="black">black</option>
+                <option value="brown">brown</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </header>
+    <main id="content">
+    </main>
+    <footer id="buttons">
+        <div class="page-button">
+            <button type="button" id="previous">Previous Page</button>
+            <div id="page"></div>
+            <button type="button" id="next">Next Page</button>
+        </div>
+    </footer>
+</body>
+</html>
