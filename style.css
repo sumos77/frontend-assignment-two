@@ -1,8 +1,13 @@
+*{
+    font-family: 'Acme';
+}
+
 body {
     background-image: url("birds-1920.jpg");
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
-    font-family: 'Acme';
 }
 
 header {
@@ -22,7 +27,7 @@ input {
     padding-left: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    max-width: 300px;
+    max-width: 400px;
     flex: auto;
     font-family: 'Acme';
     font-size: 24px;
@@ -43,7 +48,6 @@ button {
     background-color: rgb(216, 216, 216);
     border: none;
     border-radius: 8px;
-    font-family: 'Acme';
     font-size: 24px;
 }
 
@@ -111,4 +115,11 @@ footer {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 24px;
+}
+
+@media screen and (max-width: 500px){
+    
+    .input-area {
+        display: block;
+    }
 }
